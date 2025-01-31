@@ -1,0 +1,828 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Это мой код */
+.identify_mine {
+color:rgb(143, 29, 0); 
+}
+html {
+max-height: 100%;
+}
+nav {
+z-index: 9999;
+}
+.map {
+height: 300px;
+width: 100%;
+}
+img {
+max-width: 100%;
+}
+sup {
+vertical-align: super;
+}
+h3 {
+font-size: 140%;
+line-height: 1.4;
+text-align: center;
+padding: 5px;
+margin: 5px;
+font-weight: bold;
+color: rgb(21, 44, 115);
+}
+h4 {
+font-size: 130%;
+line-height: 1.4;
+text-align: center;
+padding: 5px;
+margin: 5px;
+font-weight: bold;
+color: rgb(21, 44, 115);
+}
+p, ul, ol {
+font-size: 120%;
+padding: 5px;
+margin: 5px;
+line-height: 1.4;
+}
+a:link {
+color: rgb(21, 44, 115);
+}
+a:visited {
+color: grey;
+}
+a:hover {
+color: red;
+}
+a:focus {
+color: red;
+}
+a:active {
+color: rgb(21, 44, 115);
+}
+li {
+margin: 5px;
+padding: 5px;
+}
+div.padding_title {
+padding-top: 80px;
+padding-bottom: 10px;
+}
+body {
+font-size: small;
+font-family: 'Arial', sans-serif;
+background-color: whitesmoke;
+background-image: url(img/truck_change.jpg);
+background-repeat: no-repeat;
+background-position:  center center;
+background-size: cover;
+background-attachment: fixed;
+max-height: 100%;
+}
+div.link {
+width: 50px;
+background-color: rgb(21, 44, 115);
+padding: 2px;
+margin-right: auto;
+margin-left: auto;
+border-color: white;
+border-width: 1px;
+border-style: solid;
+border-radius: 3px;
+cursor: pointer;
+}
+div.link div {
+width: 30px;
+height: 1px;
+background-color: white;
+margin: 3px;
+border-radius: 1px;
+border-color: white;
+border-style: solid;
+border-width: 1px;
+margin-right: auto;
+margin-left: auto;
+}
+nav {
+position: fixed;
+top: 0;
+width: 100%;
+}
+nav div ul {
+text-align: left;
+font-size: 110%;
+}
+nav div ul li {
+margin: 10px;
+padding: 0px;
+text-decoration: underline;
+font-weight: bold;
+}
+nav div ul li a:link{
+color: white;
+}
+nav div ul li a:visited {
+color: white;
+}
+nav div ul li a:hover{
+color: red;
+}
+nav div ul li a:focus{
+color: red;
+}
+nav div ul li a:active{
+color: white;
+}
+div#button_a_sign {
+padding: 5px;
+background-color: rgb(21, 44, 115);
+-webkit-box-shadow: 0 0 15px black;
+        box-shadow: 0 0 15px black;
+}
+p#button {
+text-align: center;
+font-size: 110%;
+font-weight: bold;
+color: white;
+padding: 5px;
+}
+div#menu {
+padding: 10px;
+margin: 10px;
+margin-top: 0px;
+border-radius: 0px 0px 10px 10px;
+background-color: rgba(0, 0, 0, 0.5);
+}
+header {
+border-top-color: white;
+border-top-width: 1px;
+border-top-style: solid;
+}
+div#wripe_title {
+padding-top: 80px;
+}
+div#wripe_title h1{
+font-size: 210%;
+font-weight: bold;
+text-align: center;
+padding: 10px;
+padding-bottom: 20px;
+padding-top: 20px;
+margin: 5px;
+margin-top: 0px;
+background-color: rgba(210, 210, 210, 0.7);
+}
+div#offer_table div {
+text-align: center;
+}
+div#logo img {
+padding: 20px;
+border-radius: 20% 20% 20% 20%;
+margin: 5px;
+background-color: rgba(210, 210, 210, 0.7);
+}
+div#offer_table div h2 {
+font-size: 125%;
+font-weight: bold;
+text-align: center;
+padding: 10px;
+padding-bottom: 20px;
+padding-top: 20px;
+margin: 5px;
+color: black;
+background-color: rgba(210, 210, 210, 0.7);
+line-height: 1.6;
+}
+div#offer_table div h2 span {
+font-size: 135%;
+}
+div#telephone_main {
+background-color: rgba(210, 210, 210, 0.7);
+padding: 10px;
+padding-bottom: 20px;
+padding-top: 20px;
+margin: 5px;
+}
+div#telephone_main p {
+font-size: 140%;
+margin: 10px;
+text-align: left;
+}
+div#telephone_main p:first-child {
+font-size: 200%;
+}
+div#telephone_main p:last-child {
+font-weight: 700;
+}
+div#competitive_advantage {
+margin: 0;
+}
+span.identify_mine {
+font-weight: bold;
+}
+div#first_block_ca,
+div#second_block_ca,
+div#third_block_ca {
+background-color: rgb(255, 255, 255);
+border-color: white;
+border-width: 1px;
+border-style: solid;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+div#first_block_ca p,
+div#second_block_ca p,
+div#third_block_ca p  {
+width: 180px;
+margin: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+background-color: white;
+font-size: 130%;
+font-weight: normal;
+line-height: 1.6;
+border-color: rgb(21, 44, 115);
+border-width: 1px;
+border-style: dotted;
+border-radius: 5px;
+}
+div#our_costumers {
+background-color: white;
+border-color: white;
+border-width: 1px;
+border-style: solid;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+#our_costumers div {
+text-align: center;
+padding: 0px;
+margin: 0px;
+}
+div.costumers_logo_table_cell1,
+div.costumers_logo_table_cell2,
+div.costumers_logo_table_cell3,
+div.costumers_logo_table_cell4 {
+padding: 10px;
+margin-right: 10px;
+}
+div#our_costumers p {
+font-size: 120%;
+padding: 10px;
+margin: 10px;
+line-height: 1.4;
+}
+div#repair,
+div#sale,
+div#about,
+div#contact {
+margin: 0;
+background-color: white;
+border-color: white;
+border-width: 1px;
+border-style: solid;
+margin-top: 50px;
+margin-bottom: 50px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 80px;
+}
+div#repair h2,
+div#sale h2,
+div#about h2,
+div#contact h2 {
+font-size: 180%;
+font-weight: normal;
+text-align: center;
+padding: 10px;
+padding-bottom: 20px;
+padding-top: 20px;
+margin: 5px;
+color: rgb(21, 44, 115);
+line-height: 1.6;
+}
+div#repair ul {
+margin: 5px;
+padding: 5px;
+list-style-image: url(img/marker.svg);
+list-style-position: inside;
+}
+div#repair ul li {
+margin: 5px;
+padding: 5px;
+font-size: 100%;
+}
+footer {
+border-width: 1px;
+border-style: solid;
+border-color: white;
+background-color: white;
+}
+footer p {
+font-size: 80%;
+}
+div.table_cell_text p{
+font-size: 100%;
+}
+div.table_cell p{
+font-size: 80%;
+font-style: italic;
+}
+figure {
+text-align: center;
+}
+figure p {
+text-align: center;
+}
+div#sertificat {
+text-align: center;
+}
+.list_inner {
+list-style-type: disc;
+list-style-position: inside;
+}
+.list_garant {
+list-style-type: decimal;
+list-style-position: inside;
+}
+div.costumers_logo_table {
+padding-top: 40px;
+}
+a.mobil_telephont {
+text-decoration: none;
+color: rgb(21, 44, 115);
+}
+li.logo_over_top {
+display: none;
+}
+@media screen and (min-width: 480px) {
+	div#menu {
+		background-color: rgb(21, 44, 115);
+		padding: 0px;
+		margin: 0px;
+		border-bottom-color: rgb(21, 44, 115);
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-right-color: rgb(21, 44, 115);
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-left-color: rgb(21, 44, 115);
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-radius: 0px 0px 0px 0px;
+		-webkit-box-shadow: 0 0 15px black;
+				box-shadow: 0 0 15px black;
+	}
+	nav {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	nav div ul {
+		text-align: center;
+		font-size: 105%;
+		margin-top: 0px;
+	}
+	nav div ul li {
+		margin: 8px;
+		padding: 0px;
+		font-weight: normal;
+		display: inline;
+	}
+	nav div ul li a:link{
+		color: white;
+	}
+	nav div ul li a:visited {
+		color: white;
+	}
+	nav div ul li a:hover{
+		color: #d19282;
+	}
+	nav div ul li a:focus{
+		color: #d19282;
+	}
+	nav div ul li a:active{
+		color: white;
+	}
+	div#button_a_sign {
+		padding: 0px;
+		background-color: white;
+		-webkit-box-shadow: 0 0 0 black;
+				box-shadow: 0 0 0 black;
+	}
+	div#menu span {
+		display: none;
+	}
+	div#telephone_main {
+		background-color: rgba(210, 210, 210, 0.7);
+		padding: 10px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		margin: 5px;
+		width: 280px;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 10px;
+	}
+	div#main {
+		clear: both;
+	}
+	div#wripe_title h1{
+		width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+	}
+	div#offer_table div h2 {
+		width: 440px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+	}
+	div#first_block_ca p, 
+	div#second_block_ca p,
+	div#third_block_ca p{
+		width: 370px;
+		margin: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 40px;
+		background-color: whitesmoke;
+		font-size: 140%;
+		font-weight: normal;
+		line-height: 1.6;
+		border-color: whitesmoke;
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 5px;
+	}
+	div#repair, div#sale, div#about, div#contact {
+		padding: 30px;
+	}
+}
+@media screen and (min-width: 490px) {
+	nav div ul {
+	font-size: 110%;
+	}
+}
+@media screen and (min-width: 620px) {
+	div.costumers_logo_table1 {
+		display: table;
+		width: 100%;
+	}
+	div.costumers_logo_table_row1,
+	div.costumers_logo_table_row2 {
+		display: table-row;
+	}
+	div.costumers_logo_table_cell1,
+	div.costumers_logo_table_cell2,
+	div.costumers_logo_table_cell3,
+	div.costumers_logo_table_cell4 {
+		display: table-cell;
+		width: 50%;
+	}
+	div#wripe_title h1{
+		width: 590px;
+	}
+	div#repair, div#sale, div#about, div#contact {
+		padding: 35px;
+	}
+}
+@media screen and (min-width: 810px) {
+	div#menu span {
+		display: inline;
+	}
+	div#main {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	nav div ul {
+		padding-bottom: 25px;
+		padding-top: 25px;
+	}
+	div#first_block_ca p,
+	div#second_block_ca p,
+	div#third_block_ca p {
+		width: 370px;
+		margin: 120px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 80px;
+		background-color: whitesmoke;
+		font-size: 140%;
+		font-weight: normal;
+		line-height: 1.6;
+		border-color: whitesmoke;
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 5px;
+	}
+	div#repair, div#sale, div#about, div#contact {
+		padding: 55px;
+	}
+}
+@media screen and (min-width: 1005px) {
+	div#offer_table {
+		display: table;
+		width: 100%;
+		margin-bottom: 100px;
+		margin-top: 100px;
+	}
+	div#offer_table_row {
+		display: table-row;
+	}
+	div.title_table,
+	div#telephone_table {
+		display: table-cell;
+		width: 50%;
+		vertical-align: top;
+	}
+	div#telephone_main {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	div#repair, div#sale, div#about, div#contact {
+		padding: 55px;
+	}
+}
+@media screen and (min-width: 1150px) {
+	div#first_block_ca,
+	div#second_block_ca,
+	div#third_block_ca  {
+		border: 0;
+	}
+	.wipe_table {
+		display: table;
+		border-spacing: 100px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		width: 100%;
+	}
+	.row_table {
+		display: table-row;
+	}
+	.right {
+		position: relative;
+		top: 50px;
+	}
+	.wipe_table p {
+		display: table-cell;
+		width: 50%;
+		padding: 40px;
+		margin: 0;
+		font-size: 100%;
+		background-color: #f9f9f9;
+		border-width: 0;
+		border-radius: 15px;
+	}
+	/* код */
+	div#offer_table {
+		display: block;
+		width: auto;
+		margin-bottom: 60px;
+		margin-top: 60px;
+		margin-left: 50%;
+		position: relative;
+	}
+	div#offer_table_row {
+		display: block;
+	}
+	div.title_table,
+	div#telephone_table {
+		display: block;
+		width: 100%;
+	}
+	div#telephone_main {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		width: 340px;
+	}
+	body {
+		font-size: medium;
+		background-position:  top left;
+		background-size: 55% auto;
+	}
+	div#wripe_title h1{
+		width: auto;
+		margin-left: 45%;
+		background-color: rgba(255, 255, 255, 0);
+		color: rgb(21, 44, 115);
+	}
+	div#offer_table div h2 {
+		background-color: rgba(255, 255, 255, 0);
+	}
+	div#logo {
+		position: absolute;
+		top: 0px;
+		left: -500px;
+	}
+	header {
+		background-image: url(img/maska.svg);
+		background-repeat: no-repeat;
+		background-position:  top left;
+		background-size: 100% auto;
+		margin: 0;
+	}
+	.table_whole {
+		display: table;
+		width: 100%;
+		border-spacing: 0px 0px;
+	}
+	.table_row {
+		display: table-row;
+	}
+	.table_cell,
+	.table_cell_text {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.table_cell {
+		width: 38%;
+		border-width: 1px;
+		border-style: solid;
+		border-color: whitesmoke;
+	}
+	.table_cell_text {
+		width: 62%;
+	}
+	div#repair,
+	div#sale,
+	div#about,
+	div#contact {
+		margin-top: 300px;
+		margin-bottom: 300px;
+	}
+	div#repair h2,
+	div#sale h2,
+	div#about h2,
+	div#contact h2 {
+		padding-bottom: 20px;
+		padding-top: 60px;
+	}
+	div#first_block_ca,
+	div#second_block_ca,
+	div#third_block_ca {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	#list_dillers {
+		-webkit-column-count: 2;
+				column-count: 2;
+		-webkit-column-gap: 2em;
+				column-gap: 2em;
+		-webkit-column-rule: 1px solid rgb(21, 44, 115);
+				column-rule: 1px solid rgb(21, 44, 115);
+		-webkit-column-width: 12em;
+				column-width: 12em;
+	}
+	div#repair, div#sale, div#about, div#contact {
+		padding: 60px;
+	}
+	div.costumers_logo_table1,
+	div.costumers_logo_table_row1,
+	div.costumers_logo_table_cell1,
+	div.costumers_logo_table_cell2,
+	div.costumers_logo_table_row2,
+	div.costumers_logo_table_cell3,
+	div.costumers_logo_table_cell4 {
+		display: inline;
+	}
+	div.costumers_logo_table_cell1 img,
+	div.costumers_logo_table_cell2 img,
+	div.costumers_logo_table_cell3 img,
+	div.costumers_logo_table_cell4 img {
+		margin: 15px;
+		margin-bottom: 50px;
+		vertical-align: top;
+	}
+	div#offer_table div h2 {
+		color: rgb(21, 44, 115);
+	}
+	nav div ul li {
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	li.logo_over_top {
+		display: inline-block;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	nav div ul {
+		padding-bottom: 0px;
+		padding-top: 0px;
+		margin-bottom: 0px;
+	}
+	div#wripe_title {
+		padding-top: 100px;
+	}
+}
+@media screen and (min-width: 1500px) {
+	body {
+		font-size: large;
+	}
+	div#telephone_main {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		width: 400px;
+	}
+	div#wripe_title h1{
+		padding: 15px;
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+}
+@media screen and (min-width: 1900px) {
+	body {
+		font-size: x-large;
+	}
+	div#telephone_main {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		width: 500px;
+	}
+	div#wripe_title h1{
+		padding: 20px;
+		padding-bottom: 40px;
+		padding-top: 40px;
+	}
+}
+@media screen and (min-width: 2300px) {
+	body {
+		font-size: xx-large;
+	}
+	div#telephone_main {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		width: 700px;
+	}
+	div#offer_table div h2 {
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+	}
+	div#wripe_title h1 {
+		padding: 20px;
+		padding-bottom: 60px;
+		padding-top: 60px;
+	}
+}

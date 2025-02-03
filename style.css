@@ -406,7 +406,9 @@ display: none;
 	font-size: 50%;
 	background-color: yellow;
 }
-
+.boldtext {
+	font-weight: bold;
+}
 @media screen and (min-width: 480px) {
 	div#menu {
 		background-color: rgb(21, 44, 115);
